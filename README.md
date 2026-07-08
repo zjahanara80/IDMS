@@ -9,7 +9,7 @@
 
 An enterprise-grade, open-source centralized panel to monitor, track, and manage digital assets including domains, servers, SSL certificates, and financial records. Built for teams that need to ensure zero downtime and prevent accidental expiration of critical services.
 
-## 🔥 Key Features
+##  Key Features
 
 ### Infrastructure Tracking
 
@@ -40,6 +40,26 @@ An enterprise-grade, open-source centralized panel to monitor, track, and manage
   <img width="2873" height="1468" style="border-radius: 20px;" alt="Screenshot 2026-02-22 092835" src="https://github.com/user-attachments/assets/2aad8881-21cf-4814-897f-07ba38036d36" />
 </p>
 
+##  Frontend Architecture & UI/UX Features
+
+The frontend is built with **React.js**, focusing on delivering a highly responsive, clean, and intuitive administrative experience, specifically optimized for Right-to-Left (RTL) locales.
+
+###  Key UI/UX Highlights
+* **RTL-First Layout:** Fully native Right-to-Left (RTL) layout engineered from scratch, ensuring perfect alignment, typography, and spacing for Persian-speaking administrators.
+* **Component-Driven Architecture:** Modular, reusable React components (Cards, Sidebars, Modals, and Forms) ensuring high performance and easy maintainability.
+* **State-Driven Status Badges:** Dynamic, color-coded visual indicators mapping directly to backend status codes:
+  * 🔴 `Expired` (منقضی شده)
+  * 🟢 `Active` (فعال)
+  * 🟡 `Warning/Near Expiry` (در آستانه انقضا)
+  * 🔵 `Reserved` (رزرو شده)
+* **Live Search & Client-Side Filtering:** Instant search bar and status dropdown filters enabling administrators to query hundreds of domains with zero lag.
+* **Interactive Forms & Dynamic Actions:**
+  * Password visibility toggles on sensitive fields.
+  * Live company logo preview upon upload.
+  * Inline CRUD management (Edit/Delete actions directly inside user lists and domain cards).
+* **Theme Customization Ready:** Integrated quick-access theme/palette switcher in the top bar for future customization.
+
+
 ## 🛠 Tech Stack
 
 * Backend: [Django Ninja](https://django-ninja.rest-framework.com/) (Fast, Async-ready, Type-safe API)
@@ -49,7 +69,7 @@ An enterprise-grade, open-source centralized panel to monitor, track, and manage
 * Task Scheduling: Django Management Commands + System Cron
 
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 
